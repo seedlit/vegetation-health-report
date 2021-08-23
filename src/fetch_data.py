@@ -82,10 +82,10 @@ def generate_cog_data(out_dir, aoi_path, s2_bands, date_str, query_results, targ
         items = query_results.items()
         catalog = intake.open_stac_item_collection(items)
         for cog_num in range(0, np.shape(list(catalog))[0]):
-            if (
-                cog_num > 0
-            ):  # only download data for the first result (assuming sorting works correctly)
-                continue
+            # if (
+            #     cog_num > 0
+            # ):  # only download data for the first result (assuming sorting works correctly)
+            #     continue
             for band_name in s2_bands:
                 tile_item = catalog[list(catalog)[cog_num]]
                 ds_band = get_band_from_cog(band_name, tile_item)
