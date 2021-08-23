@@ -118,13 +118,12 @@ def generate_health_report(
 
         # generating PDF report
         try:
-            aoi_name = aoi_path.split("/")[-1].split(".")[0]
             date = red_band_path.split("/")[-3]
             out_pdf_path = os.path.join(
                 current_dir, "generated_report_{}.pdf".format(date)
             )
             generate_pdf_report.generate_pdf(
-                current_dir, aoi_name, date, n_clusters, out_pdf_path
+                current_dir, aoi_path, date, n_clusters, out_pdf_path
             )
         except Exception as e:
             print("some error in generating pdf report")

@@ -2,7 +2,6 @@ import os
 import numpy as np
 import gdal
 from matplotlib import pyplot as plt
-from numpy.lib import utils
 from src import utils
 from PIL import Image
 
