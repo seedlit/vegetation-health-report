@@ -6,15 +6,15 @@ Input AOI --> generates NDVI --> performs kmeans clustersing --> generates PDF r
 ### Features
  - Uses cloud optimized GeoTIFF (COG) format to avoid downloading large files onto your local machine
  - Option to provide start date and end date
- - Automatically calculates ideal no. of clusters (kmeans) using ![elbow curve method](https://en.wikipedia.org/wiki/Elbow_method_(clustering))
+ - Automatically calculates ideal no. of clusters (kmeans) using [elbow curve method](https://en.wikipedia.org/wiki/Elbow_method_(clustering))
  - Generates an interactive folium map (html) with identified clusters
  - For each available date, generates a pdf report containing RGB, NDVI, NDVI classes, Kmeans clusters, and clusters superimposed on RGB
- - ![Script to download data](./src/fetch_data.py) can be used as an independent module with options to specify data source (sentinel, landsat, etc.), bands, cloud threshold, etc.
+ - [Script to download data](./src/fetch_data.py) can be used as an independent module with options to specify data source (sentinel, landsat, etc.), bands, cloud threshold, etc.
  - Applies a precautionary buffer of radius=0 at input AOI, to make sure polygons are valid
  </br>
 
 ### See
-Please see ![Exploratory Data Analysis (EDA) readme](./eda/eda_readme.md) for more details on data.
+Please see [Exploratory Data Analysis (EDA) readme](./eda/eda_readme.md) for more details on data.
 <br/>
 
 ### Sample results for a ![test aoi](./resources/test_aoi_river.geojson)
@@ -41,7 +41,7 @@ Example 2: `python main.py --aoi resources/test_aoi_river.geojson --start_date 2
 
 ### Installation
 These steps are for Ubuntu (might differ a bit for MacOS and Windows)
-Ensure that GDAL is installed in your environment. See ![this page](https://mothergeo-py.readthedocs.io/en/latest/development/how-to/gdal-ubuntu-pkg.html) for gdal's installation instructions. <br/>
+Ensure that GDAL is installed in your environment. See [this page](https://mothergeo-py.readthedocs.io/en/latest/development/how-to/gdal-ubuntu-pkg.html) for gdal's installation instructions. <br/>
 Step 1: Clone the repo --> `git clone https://github.com/seedlit/vegetation-health-report.git` <br/>
 Step 2: move into the repo --> `cd vegetation-health-report` <br/>
 Step 3: Create a new virtual environment --> `python3 -m venv venv` <br/>
