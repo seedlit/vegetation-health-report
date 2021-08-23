@@ -49,7 +49,8 @@ Step 6: Run tests --> `python test.py`
 ### TODO:
 - [ ] remove dependency on gdal. Most of the gdal's functions that I am using can be completed by rastertio or some other library. This would help in creating a pypi package for this repo
 - [ ] create a package - conda or pypi
-- [ ] Incorporate the generated folium maps in generated pdf report (as screeshots)
+- [ ] Incorporate the generated folium maps in generated pdf report (as screeshots). Existing solution use selenium to open the html in browser and take a screenshot. But ideally, I would like to avoid that.
 - [ ] Degub cloud cover checks issue: the cloud cover threshold doesen't seems to be working
 - [ ] Use multiprocessing to speed up
 - [ ] Make async. For example, no need to wait for data to get downloaded for all dates. Start wokring as soon as data is downloaded for a date. And remaining downloading can continue in background
+- [ ] Add area for each NDVI classes. For eg. 70% area belongs to moderate vegetation, etc.
