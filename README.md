@@ -13,6 +13,10 @@ Input AOI --> generates NDVI --> performs kmeans clustersing --> generates PDF r
  - Applies a precautionary buffer of radius=0 at input AOI, to make sure polygons are valid
  </br>
 
+### See
+Please see ![Exploratory Data Analysis (EDA) readme](./eda/eda_readme.md) for more details on data.
+<br/>
+
 ### Sample results for a ![test aoi](./resources/test_aoi_river.geojson)
 <img src="./sample_results/rgb.png" width=70% > </img>
 <img src="/sample_results/ndvi_vis.png" width=70%> </img>
