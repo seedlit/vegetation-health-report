@@ -30,7 +30,7 @@ Run the script main.py and pass the following arguments: <br/>
 - "--end_date" [optional]: end date in YYYY-MM-DD format. Will take today's date if left blank
 - "--out_dir" [optional]:path to directory where data will be generated
 - "--crs" [optional]: target CRS of the generated data. If skipped, CRS will match input aoi's CRS
-- "--cloud_threshold" [optional]: Cloud cover threshold in %. If skipped, the default value is set to 5
+- "--cloud_threshold" [optional]: Cloud cover threshold in %. If skipped, the default value is set to 5 <br/>
 Example 1: `python main.py --aoi resources/test_aoi_river.geojson` <br/>
 Example 2: `python main.py --aoi resources/test_aoi_river.geojson --start_date 2021-08-17 --clusters 3 --cloud_threshold 15`
 </br>
